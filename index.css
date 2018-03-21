@@ -1,0 +1,337 @@
+
+/* 
+Eric Meyer’s “Reset CSS” 2.0
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************************** Background **********************************************************/
+
+#backGround {
+    width: 100%;
+    min-width: 1500;
+    position: absolute;
+    top: -250px;
+    z-index: -999;
+}
+body {
+    background-color: lightgray;
+}
+
+/********************************************************** Header **********************************************************/
+
+header {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(48,48,48);
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top:0;
+}
+#smart,
+form {
+    margin: auto;
+}
+#smart {
+    max-height: 30%; 
+    padding: 0 130px 0 20px;
+}
+form {
+    padding: 0 20px 0 130px;
+}
+#submitButton {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    border-style: solid;
+    border-color: gray;
+    font-weight: 600;
+    cursor: pointer;
+}
+#submitButton:hover {
+    color: rgba(0,140,200,1);
+}
+#submitValue {
+    background-color: rgba(0,0,0,0);
+    color: gray;
+    border-style: solid;
+    border-color: gray;
+}
+
+/********************************************************** Main content **********************************************************/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+#mainContent {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 1100px;
+    margin: auto;
+    margin-top: 250px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    margin: 400px 2px 0 2px;
+    width: 215px;
+    height: 290px;
+    background-color: white;
+    z-index: 999;
+    -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(89%, transparent) , to(rgba(250, 250, 250, 0.1)));
+}
+.abcdLetters {
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.title {
+    font-size: 2em;
+    font-family: 'Yellowtail', cursive;
+    margin: 10px auto;
+}
+p a {
+    text-decoration: none;
+    color: rgba(0,140,200,1);
+}
+p a:hover {
+    font-weight: 600;
+}
+button {
+    width: 120px;
+    height: 40px;
+    margin: 40px auto 0 auto;
+    border-radius: 40px;
+    background-color: rgba(0,140,200,1);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-shadow: inset 0px -10px 61px -5px rgba(0,0,0,0.3);
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+button:hover {
+    width: 130px;
+}
+.aContainer {
+    background-color: rgb(48,48,48);
+    color: white;
+    border-radius: 15px 0;
+    box-shadow: inset 70px -90px 100px 0px rgba(0,0,0,0.4);
+}
+.bContainer {
+    border-radius: 0 15px;
+}
+.cContainer {
+    border-radius: 15px 0;
+}
+.dContainer {
+    border-radius: 0 15px;
+}
+.aContainer button {
+    background-color: white;
+    color: rgb(48,48,48);
+}
+.bottomContainer {
+    width: calc(4*219px);
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset 0px -10px 61px 0px rgba(0,0,0,0.3);
+    font-size: 1.3em;
+}
+.bottomContainer p {
+    width: 600px;
+    text-align: left;
+    font-size: 1em;
+    padding: calc(100px - 2.2em) 0;
+    line-height: 1.5em;
+    color: white;
+    margin-left: auto;
+}
+.icon {
+    cursor: pointer;
+}
+.iconContainer {
+    width: calc(4*219px);
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0);
+    text-align: left;
+}
+#only {
+    display: block;
+    width: 400px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 150px;
+    left: 42%;
+    font-size: 3em;
+    padding: 5px;
+}
+#customer {
+    display: block;
+    width: 250px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 208px;
+    left: 44%;
+    font-size: 2em;
+    padding: 5px;
+}
+
+/********************************************************** Footer **********************************************************/
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(48,48,48);
+    box-shadow: inset 0px -100px 260px -70px rgba(0,0,0,0.72);
+}
+
+/********************************************************** Media queries **********************************************************/
+
+@media screen and (min-width: 1501px) {
+    #mainContent {
+        box-shadow: 0px 0px 10px 1px rgba(48,48,48,0.75);
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .container {
+        -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(95%, transparent) , to(rgba(250, 250, 250, 0.1)));
+    }
+    .dContainer {
+        margin-top: 20px;
+    }
+    .bottomContainer {
+        width: calc(2*219px);
+        height: 290px;
+    }
+    .bottomContainer p {
+        width: 200px;
+        padding: calc(76px - 1em);
+    }
+    .iconContainer {
+        text-align: center;
+    }
+    .bottomContainer p {
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 671px) {
+    .cContainer {
+        margin-top: 20px;
+    }
+    #mainContent {
+        height: auto;
+    }
+    #only {
+        left: 23%;
+        width: 350px;
+    }
+    #customer {
+        left: 25%;
+        width: 250px;
+    }
+    form {
+        padding: 10px;
+    }
+    #smart {
+        padding: 50px;
+    }
+    form,
+    #submitValue {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .container {
+        margin-top: 20x;
+    }
+    aContainer {
+        margin: 400px 2px 0 2px;
+    }
+    .bContainer {
+        margin-top: 20px;
+    }
+    .bottomContainer {
+        width: 219px;
+        height: 290px;
+    }
+    .bottomContainer p {
+        width: 150px;
+        height: 220px;
+        padding: calc(50px - 1em); 
+        font-size: 0.9em;
+    }
+    #only {
+        left: 2%;
+        font-size: 2em;
+    }
+    #customer {
+        left: 4%;
+        font-size: 1.5em;
+        top: 190px;
+    }
+}
